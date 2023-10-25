@@ -1,11 +1,11 @@
+import Link from 'next/link'
 import { getServerSession } from 'next-auth'
 import { authOptions } from '@/auth'
+import { MessagesSquareIcon } from 'lucide-react'
 
 import { DarkModeToggle } from '@/components/dark-mode-toggle'
 import { Logo } from '@/components/logo'
 import { UserButton } from '@/components/user-button'
-import Link from 'next/link'
-import { MessagesSquareIcon } from 'lucide-react'
 
 export const Header = async () => {
   const session = await getServerSession(authOptions)
@@ -30,7 +30,7 @@ export const Header = async () => {
 
           <DarkModeToggle />
 
-          <UserButton />
+          <UserButton session={session} />
         </div>
       </nav>
 
