@@ -6,6 +6,7 @@ import { MessagesSquareIcon } from 'lucide-react'
 import { DarkModeToggle } from '@/components/dark-mode-toggle'
 import { Logo } from '@/components/logo'
 import { UserButton } from '@/components/user-button'
+import { CreateChatButton } from '@/components/create-chat-button'
 
 export const Header = async () => {
   const session = await getServerSession(authOptions)
@@ -23,6 +24,7 @@ export const Header = async () => {
               <Link href="/chat" prefetch={false}>
                 <MessagesSquareIcon className="text-black dark:text-white" />
               </Link>
+              <CreateChatButton />
             </>
           ) : (
             <Link href="/pricing">Pricing</Link>

@@ -19,6 +19,8 @@ interface UserButtonProps {
 }
 
 export const UserButton = ({ session }: UserButtonProps) => {
+  // Subscription listener...
+
   if (!session)
     return (
       <Button variant="outline" onClick={() => signIn()}>
