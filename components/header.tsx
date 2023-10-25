@@ -1,4 +1,5 @@
-import { Logo } from './logo'
+import { DarkModeToggle } from '@/components/dark-mode-toggle'
+import { Logo } from '@/components/logo'
 
 export const Header = () => {
   return (
@@ -10,6 +11,10 @@ export const Header = () => {
           {/* Language Select */}
 
           {/* Session & */}
+
+          <DarkModeToggle />
+
+          {/* UserButton */}
         </div>
       </nav>
 

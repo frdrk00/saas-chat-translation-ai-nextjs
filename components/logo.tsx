@@ -1,7 +1,8 @@
-import LogoImage from '@logos/black.svg'
 import Link from 'next/link'
-import { AspectRatio } from '@/components/ui/aspect-ratio'
 import Image from 'next/image'
+
+import LogoImage from '@logos/black.svg'
+import { AspectRatio } from '@/components/ui/aspect-ratio'
 
 export const Logo = () => {
   return (
