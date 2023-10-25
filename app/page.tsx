@@ -1,6 +1,5 @@
 import Image from 'next/image'
 import Link from 'next/link'
-
 import DemoGif from '/images/testGif.gif'
 
 export default function Home() {
