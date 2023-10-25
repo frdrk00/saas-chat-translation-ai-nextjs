@@ -1,5 +1,6 @@
 import { DarkModeToggle } from '@/components/dark-mode-toggle'
 import { Logo } from '@/components/logo'
+import { UserButton } from '@/components/user-button'
 
 export const Header = () => {
   return (
@@ -14,7 +15,7 @@ export const Header = () => {
 
           <DarkModeToggle />
 
-          {/* UserButton */}
+          <UserButton />
         </div>
       </nav>
 
