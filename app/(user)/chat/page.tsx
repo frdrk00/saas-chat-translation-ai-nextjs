@@ -10,9 +10,6 @@ interface ChatPageProps {
 const ChatsPage = ({ searchParams: { error } }: ChatPageProps) => {
   return (
     <div>
-      {/* Chat Permission chat */}
-
-      {/* ChatList */}
       <ChatList />
     </div>
   )

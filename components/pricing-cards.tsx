@@ -18,7 +18,7 @@ export const PricingCards = ({ redirect }: PricingCardsProps) => {
             key={tier.id}
             className="flex flex-col justify-between rounded-3xl bg-white p-8 shadow-xl ring-1 ring-gray-900/10 sm:p-10 "
           >
-            <div className="">
+            <div>
               <h3
                 id={tier.id + tier.name}
                 className="text-base font-semibold leading-7 text-indigo-600"

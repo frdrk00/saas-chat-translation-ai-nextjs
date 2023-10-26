@@ -16,7 +16,7 @@ const PricingPage = () => {
         </div>
         <div className="relative mt-6">
           <p className="mx-auto max-w-2xl text-lg leading-8 text-white/60">
-            We're 99% sure we have a plan to match 100% of your needs
+            We&apos;re 99% sure we have a plan to match 100% of your needs
           </p>
           <svg
             className="absolute -top-10 left-1/2 -z-10 sm:-top-20 lg:-top-12 xl:top-0 h-[64rem] -translate-x-1/2 [mask-image:radial-gradient(closest-side,white,transparent)] md:-top-2O"

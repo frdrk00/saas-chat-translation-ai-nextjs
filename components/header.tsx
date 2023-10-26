@@ -8,6 +8,7 @@ import { Logo } from '@/components/logo'
 import { UserButton } from '@/components/user-button'
 import { CreateChatButton } from '@/components/create-chat-button'
 import { UpgradeBanner } from '@/components/upgrade-banner'
+import { LanguageSelect } from './language-select'
 
 export const Header = async () => {
   const session = await getServerSession(authOptions)
@@ -18,7 +19,7 @@ export const Header = async () => {
         <Logo />
 
         <div className="flex-1 flex items-center justify-end space-x-4">
-          {/* Language Select */}
+          <LanguageSelect />
 
           {session ? (
             <>
@@ -37,7 +38,6 @@ export const Header = async () => {
         </div>
       </nav>
 
-      {/* Upgrade Banner */}
       <UpgradeBanner />
     </header>
   )
