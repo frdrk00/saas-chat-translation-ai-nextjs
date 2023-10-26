@@ -2,6 +2,7 @@
 
 import { Session } from 'next-auth'
 import { signIn, signOut } from 'next-auth/react'
+import { StarIcon } from 'lucide-react'
 
 import { useSubscriptionStore } from '@/store/store'
 
@@ -16,7 +17,7 @@ import {
 import { UserAvatar } from '@/components/user-avatar'
 import { Button } from '@/components/ui/button'
 import { LoadingSpinner } from '@/components/loading-spinner'
-import { StarIcon } from 'lucide-react'
+import { ManageAccountButton } from '@/components/manage-account-button'
 
 interface UserButtonProps {
   session: Session | null
@@ -58,8 +59,7 @@ export const UserButton = ({ session }: UserButtonProps) => {
               <DropdownMenuSeparator />
 
               <DropdownMenuItem>
-                Manage
-                {/* <ManageAccountButton /> */}
+                <ManageAccountButton />
               </DropdownMenuItem>
             </>
           )}

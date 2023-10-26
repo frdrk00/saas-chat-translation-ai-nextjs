@@ -1,3 +1,9 @@
+import { generatePortalLink } from '@/actions/generate-portal-link'
+
 export const ManageAccountButton = () => {
-  return <div></div>
+  return (
+    <form action={generatePortalLink}>
+      <button type="submit">Manage Billing</button>
+    </form>
+  )
 }
