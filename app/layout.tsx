@@ -5,6 +5,7 @@ import { Header } from '@/components/header'
 import { ThemeProvider } from '@/components/providers/theme-provider'
 import { ClientProviders } from '@/components/providers/client-providers'
 import { FirebaseAuthProvider } from '@/components/providers/firebase-auth-provider'
+import { SubscriptionProvider } from '@/components/providers/subscription-provider'
 
 export const metadata: Metadata = {
   title: 'SaaS Translation Chat',
@@ -21,16 +22,18 @@ export default function RootLayout({
       <html lang="en">
         <body className="flex flex-col min-h-screen">
           <FirebaseAuthProvider>
-            <ThemeProvider
-              attribute="class"
-              defaultTheme="system"
-              enableSystem
-              disableTransitionOnChange
-            >
-              <Header />
+            <SubscriptionProvider>
+              <ThemeProvider
+                attribute="class"
+                defaultTheme="system"
+                enableSystem
+                disableTransitionOnChange
+              >
+                <Header />
 
-              {children}
-            </ThemeProvider>
+                {children}
+              </ThemeProvider>
+            </SubscriptionProvider>
           </FirebaseAuthProvider>
         </body>
       </html>
