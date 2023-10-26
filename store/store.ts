@@ -14,7 +14,6 @@ export type LanguagesSupported =
   | 'zh'
   | 'sk'
   | 'pl'
-  | 'nl'
   | 'tr'
   | 'cs'
 
@@ -31,7 +30,6 @@ export const LanguagesSupportedMap: Record<LanguagesSupported, string> = {
   zh: 'Chinese',
   sk: 'Slovak',
   pl: 'Polish',
-  nl: 'Dutch',
   tr: 'Turkish',
   cs: 'Czech',
 }
