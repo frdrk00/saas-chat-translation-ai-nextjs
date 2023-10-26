@@ -1,6 +1,8 @@
 import type { Metadata } from 'next'
 import './globals.css'
+
 import { Header } from '@/components/header'
+import { Toaster } from '@/components/ui/toaster'
 
 import { ThemeProvider } from '@/components/providers/theme-provider'
 import { ClientProviders } from '@/components/providers/client-providers'
@@ -32,6 +34,8 @@ export default function RootLayout({
                 <Header />
 
                 {children}
+
+                <Toaster />
               </ThemeProvider>
             </SubscriptionProvider>
           </FirebaseAuthProvider>
