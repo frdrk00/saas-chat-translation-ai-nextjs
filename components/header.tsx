@@ -7,6 +7,7 @@ import { DarkModeToggle } from '@/components/dark-mode-toggle'
 import { Logo } from '@/components/logo'
 import { UserButton } from '@/components/user-button'
 import { CreateChatButton } from '@/components/create-chat-button'
+import { UpgradeBanner } from '@/components/upgrade-banner'
 
 export const Header = async () => {
   const session = await getServerSession(authOptions)
@@ -37,6 +38,7 @@ export const Header = async () => {
       </nav>
 
       {/* Upgrade Banner */}
+      <UpgradeBanner />
     </header>
   )
 }
