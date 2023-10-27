@@ -1,36 +1,58 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Chat With Anyone
 
-## Getting Started
+[![Version](https://img.shields.io/badge/version-0.1.0-blue.svg)](https://github.com/frdrk00/saas-chat-translation-ai-nextjs)
 
-First, run the development server:
+Chat With Anyone is a unique chat application that allows you to communicate in multiple languages with the help of AI translation. This project leverages advanced technology to enable seamless conversations regardless of the language barrier.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## Overview
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+This repository, `saas-chat-translation-ai-nextjs`, is dedicated to the development of Chat With Anyone, a SaaS chat platform that offers real-time translation capabilities powered by AI. Users can send and receive messages in their preferred language, and the system automatically translates and adapts the messages to the recipient's chosen language. Additionally, users have the flexibility to modify and adjust translations through Firestore Extensions.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Usage
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+To run the project, you can use the following npm or yarn scripts:
 
-## Learn More
+- `npm run dev` - Start the development server with Next.js.
+- `npm run build` - Build the Next.js application.
+- `npm run start` - Launch the Next.js application.
+- `npm run lint` - Lint your project using Next.js linting.
 
-To learn more about Next.js, take a look at the following resources:
+## Supported Languages
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Chat With Anyone supports multiple languages for translation. Here are some of the supported languages:
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+- English (en)
+- Spanish (es)
+- French (fr)
+- German (de)
+- Italian (it)
+- Japanese (ja)
+- Korean (ko)
+- Portuguese (pt)
+- Russian (ru)
+- Chinese (zh)
+- Slovak (sk)
+- Polish (pl)
+- Turkish (tr)
+- Czech (cs)
 
-## Deploy on Vercel
+Free-tier users can access translations for up to two languages.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## Configuration
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+For proper functionality, you need to configure the following environment variables:
+
+- `GOOGLE_CLIENT_ID`: Your Google client ID.
+- `GOOGLE_CLIENT_SECRET`: Your Google client secret.
+- `NEXTAUTH_URL`: The URL for NextAuth.
+- `NEXTAUTH_SECRET`: The secret key for NextAuth.
+- `FIREBASE_PROJECT_ID`: Your Firebase project ID.
+- `FIREBASE_CLIENT_EMAIL`: Your Firebase client email.
+- `FIREBASE_PRIVATE_KEY`: Your Firebase private key.
+- `STRIPE_SECRET_KEY`: Your Stripe secret key.
+
+Please ensure that you have these variables properly set up.
+
+Feel free to explore, enhance, and contribute to this exciting project that breaks down language barriers and makes global communication accessible to everyone.
+
+For more information, please visit the [GitHub repository](https://github.com/frdrk00/saas-chat-translation-ai-nextjs).
