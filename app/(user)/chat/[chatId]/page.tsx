@@ -7,6 +7,7 @@ import { sortedMessagesRef } from '@/lib/converters/message'
 import { ChatInput } from '@/components/chat-input'
 import { ChatMessages } from '@/components/chat-messages'
 import { ChatMembersBadges } from '@/components/chat-members-badges'
+import { AdminControls } from '@/components/chat-admin-controls'
 
 interface ChatPageProps {
   params: {
@@ -23,7 +24,7 @@ const ChatPage = async ({ params: { chatId } }: ChatPageProps) => {
 
   return (
     <>
-      {/* Admin Controls */}
+      <AdminControls chatId={chatId} />
       <ChatMembersBadges chatId={chatId} />
 
       <div className="flex-1">

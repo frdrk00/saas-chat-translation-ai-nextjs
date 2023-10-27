@@ -66,7 +66,7 @@ export const ChatInput = ({ chatId }: ChatInputProps) => {
       toast({
         title: 'Free plan limit exceeded',
         description:
-          'You&apos;ve exceeded the FREE plan limit of 20 messages per chat. Upgrade to PRO for unlimited chat messages!',
+          "You've exceeded the FREE plan limit of 20 messages per chat. Upgrade to PRO for unlimited chat messages!",
         variant: 'destructive',
         action: (
           <ToastAction
@@ -111,6 +111,7 @@ export const ChatInput = ({ chatId }: ChatInputProps) => {
                   <Input
                     className="border-none bg-transparent dark:placeholder:text-white/70"
                     placeholder="Enter message in ANY language..."
+                    autoComplete="off"
                     {...field}
                   />
                 </FormControl>
